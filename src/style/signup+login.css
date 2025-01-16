@@ -1,0 +1,36 @@
+/* خلفية الصفحة */
+.signup-page, .login-page {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* تنسيق الكارت */
+  .card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* تنسيق الأزرار */
+  .btn-primary {
+    background-color: #2575fc;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #6a11cb;
+  }
+  
+  /* تنسيق الروابط */
+  .text-primary {
+    color: #2575fc !important;
+    text-decoration: none;
+  }
+  
+  .text-primary:hover {
+    color: #6a11cb !important;
+  }

@@ -1,0 +1,33 @@
+/* تخصيص ألوان الأزرار */
+#tripBtn {
+    background-color: #6c757d; /* لون رمادي */
+    border-color: #6c757d;
+  }
+  
+  #startTripBtn {
+    background-color: #28a745; /* لون أخضر */
+    border-color: #28a745;
+  }
+  
+  #cancelTripBtn {
+    background-color: #dc3545; /* لون أحمر */
+    border-color: #dc3545;
+  }
+  
+  /* تخصيص ألوان الخريطة */
+  #map {
+    height: 400px;
+    width: 100%;
+    border: 2px solid #007bff; /* إطار أزرق */
+  }
+  
+  /* تخصيص ألوان حقول الإدخال */
+  #startLocation,
+  #endLocation {
+    border-color: #007bff; /* إطار أزرق */
+  }
+  
+  #startLocation:focus,
+  #endLocation:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* ظل أزرق عند التركيز */
+  }
