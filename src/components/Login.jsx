@@ -27,7 +27,7 @@ function Login() {
     if (user) {
       localStorage.setItem('currentUser', JSON.stringify(user)); // تعيين المستخدم الحالي
       alert('Login successful! Redirecting to Home.');
-      navigate('/');
+      navigate('/home');
     } else {
       alert('Invalid email or password.');
     }
@@ -69,7 +69,7 @@ function Login() {
                   <button type="submit" className="btn btn-primary btn-lg">Login</button>
                 </div>
                 <div className="text-center mt-3">
-                  <p>Don't have an account? <Link to="/signup" className="text-primary">Sign Up</Link></p>
+                  <p>Don't have an account? <Link to="/" className="text-primary">Sign Up</Link></p>
                 </div>
               </form>
             </div>

@@ -16,13 +16,13 @@ function Navbar() {
   const handleLogout = () => {
     localStorage.removeItem('currentUser'); // إزالة بيانات المستخدم
     setLoggedInUser(null); // تحديث حالة المستخدم
-    navigate('/signup'); // إعادة التوجيه إلى صفحة التسجيل
+    navigate('/'); // إعادة التوجيه إلى صفحة التسجيل
   };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand" style={{ fontSize: '25px', fontWeight: 'bold' }}>
+        <Link to="/home" className="navbar-brand" style={{ fontSize: '25px', fontWeight: 'bold' }}>
         Home
         </Link>
         <button
@@ -77,7 +77,7 @@ function Navbar() {
             ) : (
               <>
                 <li className="nav-item">
-                  <Link to="/signup" className="nav-link">
+                  <Link to="/" className="nav-link">
                     <button className="btn btn-primary" style={{ fontSize: '25px', fontWeight: 'bold' }}>
                       Sign Up
                     </button>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import "../style/Profile.css";
 import imag from "../../public/photo_2025-01-11_23-39-01.jpg";
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
+import Navbar from './Navbar';
 function Profile() {
   const [currentUser, setCurrentUser] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
@@ -40,6 +40,8 @@ function Profile() {
   }
 
   return (
+    <>
+    <Navbar/>
     <div className="Profile container mt-5">
       <div className="row">
         <div className="col-md-6 col-lg-4">
@@ -89,6 +91,7 @@ function Profile() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

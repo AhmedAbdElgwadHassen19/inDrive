@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import 'leaflet-routing-machine';
 import '../style/home.css';
-
+import Navbar from "../components/Navbar"
 function Home() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [showTripInputs, setShowTripInputs] = useState(false);
@@ -132,6 +132,9 @@ function Home() {
   };
 
   return (
+    <>
+    <Navbar/>
+    
     <div className="container-fluid" style={{ backgroundColor: '#f0f2f5', minHeight: '100vh', padding: '20px' }}>
       <div className="container">
         {/* النص الترحيبي في الأعلى */}
@@ -184,6 +187,7 @@ function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
